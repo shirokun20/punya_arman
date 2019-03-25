@@ -99,14 +99,13 @@ class Auth extends CI_Controller
             $config['max_width']            = 1024;
             $config['max_height']           = 768;
 
-            $this->load->library('upload', $config);
+            $this->upload->initialize($config);
             if (!$this->upload->do_upload('image')) //sesuai dengan name pada form 
                 {
                     echo 'anda gagal upload';
                 }
             $file = $this->upload->data();
             $gambar = $file['file_name'];
-
             $data = [
                 'nama' => htmlspecialchars($this->input->post('nama', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
