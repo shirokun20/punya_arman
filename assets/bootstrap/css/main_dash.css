@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding:0;
+}
+.kiri{
+	float: left;
+	width: 200px;
+	height: 1000px;
+	background: #9665;
+	position: fixed;
+}
+ul{
+	margin-left: 20px;
+}
+ul li{
+	margin:10px;
+	list-style: none;
+	background: grey;
+	width: 100%;
+}
+
+ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ul li:hover ul{
+	display: block;
+}
+ul ul{
+	display: none;
+
+}
+.kanan{
+	width: 100% auto;
+	height: 800px;
+}
